@@ -1,0 +1,321 @@
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+                * {
+                    margin: 0%;
+                    padding: 0%;
+                    box-sizing: border-box;
+                    font-family: 'Roboto', sans-serif;
+                    text-decoration: none;
+                }
+
+                body {
+                    background: #F2F2F2; /* เปลี่ยนเป็นสีที่ต้องการ */
+                }
+                
+                nav {
+                    width: 100%;
+                    height: 6.9vw;
+                    background: linear-gradient(125deg, #0D0D0D, #262626)
+                }
+                
+                .nav-container {
+                    max-width: 90vw;
+                    height: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                .logonav {
+                    width: 7.5vw;
+                    object-fit: contain;
+                }
+                
+                .nav-profile {
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    min-width: 100px;
+                    gap: 1vw;
+                }
+                
+                /*
+                .nav-profile-cart {
+                    color: red;
+                    font-size: 1.2ww;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+                */
+
+                .nav-profile-cart {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                }
+
+                .icon-basket {
+                    width: 3vw;
+                    height: 3vw;
+                    min-width: 16px;
+                    min-height: 16px;
+                    object-fit: contain;
+                    /*flex-direction: row-reverse;*/
+                    filter: invert(1); /* กลับสี */
+                }
+                
+                .fa-cart-shopping {
+                    font-size: 1.5vw;
+                    color: aliceblue;
+                }
+
+                .fa-cart-shopping {
+                    position: relative;
+                }
+                
+                .cartcount {
+                    position: absolute;
+                    /* top: 4%;
+                    right: 5%; */
+                    top: -0.25vw;
+                    right: -0.25vw;
+                    width: 1vw;
+                    height: 1vw;
+                    min-width: 13px;
+                    min-height: 13px;
+                    font-size: 0.75vw;
+                    background: red;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    z-index: 2; /* cartcount อยู่เหนือไอคอนตะกร้า */
+                }
+                
+                .container {
+                    width: 90vw;
+                    /*background: yellow;*/
+                    margin: 0%;
+                    display: flex;
+                }
+                
+                .sidebar {
+                    width: 20%;
+                    padding: 10px;
+                    /*background: yellowgreen;
+                                    */
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                                /* Slider รูปภาพ */
+                .slider {
+                    position: relative;
+                    width: 100%;
+                    max-width: 1200px;
+                    min-width: 320px;
+                    min-height: 260px;
+                    aspect-ratio: 16 / 6;
+                    margin: 30px auto 40px auto;
+                    overflow: hidden;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 12px;
+                    /* box-shadow: 0 2px 16px rgba(0,0,0,0.15); */ /* เงา */
+                    background: #fff;
+                }
+
+                @media (max-width: 900px) {
+                    .slider {
+                        min-height: 180px;
+                        aspect-ratio: 16/7;
+                    }
+                }
+
+                @media (max-width: 600px) {
+                    .slider {
+                        min-height: 120px;
+                        aspect-ratio: 16/10;
+                        max-width: 98vw;
+                    }
+                }
+
+                .slides {
+                    display: flex;
+                    transition: transform 0.5s;
+                }
+                .slides a {
+                    min-width: 100%;
+                    transition: opacity 0.5s;
+                    display: block;
+                }
+                .slides img {
+                    width: 100%;
+                    height: 350px;
+                    object-fit: cover;
+                    display: block;
+                }
+                .slider-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: rgba(0,0,0,0.4);
+                    color: #fff;
+                    border: none;
+                    font-size: 2rem;
+                    padding: 0 16px;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    z-index: 2;
+                    transition: background 0.2s;
+                }
+                .slider-btn.prev { left: 16px; }
+                .slider-btn.next { right: 16px; }
+                .slider-btn:hover { background: rgba(0,0,0,0.7); }
+                .slider-dots {
+                    text-align: center;
+                    position: absolute;
+                    bottom: 18px;
+                    width: 100%;
+                    z-index: 2;
+                }
+                .slider-dots .dot {
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    margin: 0 5px;
+                    background: #bbb;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: background 0.3s;
+                    border: 2px solid #fff;
+                }
+                .slider-dots .dot.active {
+                    background: #d32f2f;
+                }
+
+                /* เส้นแบ่ง */
+                .divivder {
+                    width: 100%;
+                    height: 2px;
+                    background: #fd0000;
+                    margin-bottom: 20px;
+                }
+
+                /* จบ Slider รูปภาพ */
+                
+                .product {
+                    width: 80%;
+                    height: 100%;
+                    /*background: aquamarine;
+                                    */
+                    display: grid;
+                    gap: 2vw; /* ระยะห่างระหว่างสินค้า */
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    grid-template-columns: repeat(4, 1fr);
+                    /* grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); */
+                    grid-gap: 25px;
+                }
+                
+                .sidebar-search {
+                    padding: 10px;
+                    border: 1.5px solid transparent;
+                    width: 100%;
+                    font-size: 1vw;
+
+                    border-radius: 5px;
+                    background: #f2f2f2;
+                    border-color: #000;
+                    transition: 0.5s;
+                    margin-bottom: 20px;
+                }
+                
+                .sidebar-search:focus {
+                    border: 2px solid #424242;
+                }
+                
+                .sidebar-item {
+                    background: #f2f2f2;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 1px solid #424242;
+                    color: #000;
+                    transition: 800ms;
+                    font-size: 1vw;
+                }
+                
+                .sidebar-item:hover {
+                    background-color: rgb(88, 88, 88);
+                    color: #fff;
+                }
+                /*.product-items {
+                    background: gold;
+                        
+                    cursor: pointer;
+                }
+                */
+                
+                .product-img {
+                    width: 100%;
+                    height: 20vw;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+                
+                .contaainer {
+                    max-width: 1190px;
+                    margin: 0 auto;
+                }
+                
+                .products-con {
+                    display: grid;
+                    flex-wrap: wrap;
+                    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+                    /*grid-template-columns: repeat(4, 1fr);*/ /* กำหนดให้มี 4 คอลัมน์ */
+                    grid-gap: 1rem;
+                }
+                
+                .products-item {
+                    width: 100%; /* ใช้ความกว้างเต็มที่ */
+                    box-shadow: 0 0 5px rgba(red);
+                    transition: 0.3s;
+                    /* border: 2px solid rgb(255, 255, 255); */
+                    cursor: pointer;
+                    background-color: white;
+                    /* width: 220px; */ /* กำหนดความกว้างของสินค้า */
+                    /*min-width: 180px;
+                    max-width: 220px; */
+                    margin-bottom: 24px; /* ระยะห่างระหว่างสินค้า */
+                }
+                
+                .products-item:hover {
+                    border: 2px solid red;
+                }
+                
+                .products-detail {
+                    padding: 1rem;
+                    font-size: 1rem;/* 16px; */
+                }
+                
+                .products-img img {
+                    width: 100%;
+                }
+                
+                .products-price {
+                    display: flex;
+                    padding: 1rem;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: white; /* สีพื้นหลังของราคา */
+                    border-radius: 0 0 12px; /* มุมโค้งที่ด้านล่าง */
+                    border-top: 1px solid #ccc; /* เส้นแบ่งด้านบน */
+                }
+                
+                .products-right span {
+                    font-size: 12px;
+                }

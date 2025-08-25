@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akha Shopping</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">
+                <img src="E:\วิจัย\วิจัย\VS Code\imgs\Akha-shopping.png" class="logonav">
+            </a>
+            <div class="nav-profile">
+                <a href="index.html">
+                    <span>Akha</span>
+                </a>
+                <div class="nav-profile-cart">
+                    <!--
+                    <i class="fas fa-cart-shopping"></i>
+                    -->
+                    <a href="cart.html" class="cart-link"></a>
+                    <div class="cartcount">0</div>
+                    <img src="E:\วิจัย\วิจัย\VS Code\imgs\shopping-basket-icon.png" class="icon-basket" alt="baske"t>
+                </div>
+    </nav>
+
+    <!-- ส่วนสไลด์รูปภาพ Slider -->
+    <div class="slider">
+        <div class="slides">
+            <a href="link1.html"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="slide1"></a>
+            <a href="link2.html"><img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="slide2"></a>
+            <a href="link3.html"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="slide3"></a>
+        </div>
+        <button class="slider-btn prev">&#10094;</button>
+        <button class="slider-btn next">&#10095;</button>
+        <div class="slider-dots">
+            <span class="dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </div>
+    <div class="divivder"></div> <!--เส้นแบ่ง-->
+
+    <div class="container">
+        <div class="sidebar">
+            <input type="text" class="sidebar-search" placeholder="ค้นหาสินค้า...">
+            <a href="menu1.html" class="sidebar-item">Menu 1</a>
+            <a href="menu2.html" class="sidebar-item">Menu 2</a>
+            <a href="menu3.html" class="sidebar-item">Menu 3</a>
+            <a href="menu4.html" class="sidebar-item">Menu 4</a>
+        </div>
+
+        <div class="product">
+            <div class="products-item">
+                <div class="products-img">
+                <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+            </div>
+                <div class="products-detail">Products Name 1</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                </div>
+                <div class="products-detail">Products Name 2</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                </div>
+                <div class="products-detail">Products Name 3</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                </div>
+                <div class="products-detail">Products Name 4</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                </div>
+                <div class="products-detail">Products Name 5</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                </div>
+                <div class="products-detail">Products Name 6</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                </div>
+                <div class="products-detail">Products Name 7</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                </div>
+                <div class="products-detail">Products Name 8</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                </div>
+                <div class="products-detail">Products Name 9</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                </div>
+                <div class="products-detail">Products Name 10</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                </div>
+                <div class="products-detail">Products Name 11</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-img">
+                    <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                </div>
+                <div class="products-detail">Products Name 12</div>
+                <div class="products-price">
+                    <div class="products-left">฿1500</div>
+                    <button class="add-to-cart-button">เพิ่มลงตะกร้า</button>
+                    <!--
+                    <div class="products-right">
+                        <span>ขายแล้ว 20 ชื้น</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+
+            <!--
+        <div class="container">
+            <div class="products-con">
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-item">
+                    <div class="products-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1676031940533-8f1ac6a07268?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1887" alt="">
+                    </div>
+                    <div class="products-detail">
+                        Products Name
+                    </div>
+                    <div class="products-price">
+                        <div class="products-left">
+                            ฿1500
+                        </div>
+                        <div class="products-right">
+                            <span>ขายแล้ว 20 ชื้น</span>
+                        </div>
+                    </div>
+                </div>
+            -->
+
+
+            <!-- Script ต่างๆ-->
+            <!-- สคริปส่วนเพิ่มสินค้าลงในตะกร้า Add to cart -->
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let cartCount = 0;
+                const cartCountElem = document.querySelector('.cartcount');
+                document.querySelectorAll('.add-to-cart-button').forEach(function(btn) {
+                    btn.addEventListener('click', function() {
+                        cartCount++;
+                        cartCountElem.textContent = cartCount;
+                        alert('เพิ่มสินค้าลงในตะกร้าแล้ว');
+                    });
+                });
+            });
+            </script>
+
+            <!--สคริปส่วนค้นหา Search bar-->>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const searchInput = document.querySelector('.sidebar-search');
+                const productItems = document.querySelectorAll('.products-item');
+            
+                searchInput.addEventListener('input', function() {
+                    const searchText = searchInput.value.trim().toLowerCase();
+                    productItems.forEach(function(item) {
+                        const name = item.querySelector('.products-detail').textContent.trim().toLowerCase();
+                        if (name.includes(searchText) || searchText === '') {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            </script>
+
+            <!-- สคริปส่วนสไลด์รูปภาพ Slider -->
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Slider
+                const slides = document.querySelector('.slides');
+                const slideLinks = document.querySelectorAll('.slides a');
+                const prevBtn = document.querySelector('.slider-btn.prev');
+                const nextBtn = document.querySelector('.slider-btn.next');
+                const dots = document.querySelectorAll('.slider-dots .dot');
+                let currentSlide = 0;
+                const totalSlides = slideLinks.length;
+            
+                function showSlide(index) {
+                    if(index < 0) index = totalSlides - 1;
+                    if(index >= totalSlides) index = 0;
+                    slides.style.transform = `translateX(-${index * 100}%)`;
+                    dots.forEach(dot => dot.classList.remove('active'));
+                    dots[index].classList.add('active');
+                    currentSlide = index;
+                }
+            
+                prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+                nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+                dots.forEach(dot => {
+                    dot.addEventListener('click', function() {
+                        showSlide(Number(this.dataset.slide));
+                    });
+                });
+            
+                showSlide(0);
+            });
+            </script>
+</body>
+
+</html>

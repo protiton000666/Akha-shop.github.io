@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ตะกร้าสินค้า</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>ตะกร้าสินค้า</h1>
+    <div id="cart-items"></div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let cartContainer = document.getElementById('cart-items');
+
+        if (cart.length === 0) {
+            cartContainer.innerHTML = "<p>ตะกร้าว่างเปล่า</p>";
+            return;
+        }
+
+        cart.forEach(item => {
+            let div = document.createElement('div');
+            div.innerHTML = `
+                <img src="${item.img}" width="100">
+                <span>${item.name}</span> - <span>฿${item.price}</span>
+            `;
+            cartContainer.appendChild(div);
+        });
+    });
+    </script>
+</body>
+</html>
