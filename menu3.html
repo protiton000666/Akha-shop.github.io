@@ -444,7 +444,7 @@
             document.addEventListener('DOMContentLoaded', function() {
                 let cartCount = 0;
                 const cartCountElem = document.querySelector('.cartcount');
-                document.querySelectorAll('.add-to-cart-btn').forEach(function(btn) {
+                document.querySelectorAll('.add-to-cart-button').forEach(function(btn) {
                     btn.addEventListener('click', function() {
                         cartCount++;
                         cartCountElem.textContent = cartCount;
