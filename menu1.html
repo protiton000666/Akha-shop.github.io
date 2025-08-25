@@ -26,14 +26,13 @@
                     <!--
                     <i class="fas fa-cart-shopping"></i>
                     -->
-                    <a href="cart.html" class="cart-link">
-
+                    <a href="cart.html" class="cart-link"></a>
                     <div class="cartcount">0</div>
                     <img src="imgs\shopping-basket-icon.png" class="icon-basket" alt="basket">
                 </div>
     </nav>
-                
-    <!-- ส่วนสไลด์รูปภาพ Slider -->
+
+        <!-- ส่วนสไลด์รูปภาพ Slider -->
     <div class="slider">
         <div class="slides">
             <a href="link1.html"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="slide1"></a>
@@ -49,7 +48,7 @@
         </div>
     </div>
     <div class="divivder"></div> <!--เส้นแบ่ง-->
-                
+    
     <div class="container">
         <div class="sidebar">
             <input type="text" class="sidebar-search" placeholder="ค้นหาสินค้า...">
@@ -441,7 +440,7 @@
 
 
             <!-- Script ต่างๆ-->
-            <!--
+            
             <script>
             document.addEventListener('DOMContentLoaded', function() {
                 let cartCount = 0;
@@ -454,9 +453,40 @@
                             });
                     });
             });
-            -->
-</script>
-</body>
+            </script>
 
+            <!-- สคริปส่วนสไลด์รูปภาพ Slider -->
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Slider
+                const slides = document.querySelector('.slides');
+                const slideLinks = document.querySelectorAll('.slides a');
+                const prevBtn = document.querySelector('.slider-btn.prev');
+                const nextBtn = document.querySelector('.slider-btn.next');
+                const dots = document.querySelectorAll('.slider-dots .dot');
+                let currentSlide = 0;
+                const totalSlides = slideLinks.length;
+            
+                function showSlide(index) {
+                    if(index < 0) index = totalSlides - 1;
+                    if(index >= totalSlides) index = 0;
+                    slides.style.transform = `translateX(-${index * 100}%)`;
+                    dots.forEach(dot => dot.classList.remove('active'));
+                    dots[index].classList.add('active');
+                    currentSlide = index;
+                }
+            
+                prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+                nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+                dots.forEach(dot => {
+                    dot.addEventListener('click', function() {
+                        showSlide(Number(this.dataset.slide));
+                    });
+                });
+            
+                showSlide(0);
+            });
+            </script>
+</body>
 
 </html>
